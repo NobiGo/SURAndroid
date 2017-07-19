@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#e0e0e0"/>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/title"/>
+
+    <Spinner
+        android:id="@+id/spinnerModels"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:popupBackground="#ffffff"
+        style="@style/spinner_style"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/instructions"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="地址"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_alignBaseline="@+id/buttonAge"
+        android:layout_alignBottom="@+id/buttonAge"
+        android:layout_alignRight="@+id/sttStatus"
+        android:layout_alignEnd="@+id/sttStatus" />
+
+    <Button
+        android:id="@+id/buttonAge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSex"
+        android:layout_toEndOf="@+id/sttStatus"
+        android:layout_toRightOf="@+id/sttStatus"
+        android:text="年龄"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/buttonSex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_alignBaseline="@+id/buttonName"
+        android:layout_alignBottom="@+id/buttonName"
+        android:layout_toRightOf="@+id/sttStatus"
+        android:layout_toEndOf="@+id/sttStatus" />
+
+    <Button
+        android:id="@+id/buttonName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sttStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/sttStatus"
+        android:layout_below="@+id/spinnerModels"
+        android:layout_marginTop="15dp"
+        android:text="姓名"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerModels"
+        android:layout_marginTop="107dp"
+        android:background="@drawable/button_record_end"
+        android:text="开始录制"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/buttonSent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_record_start"
+        android:text="发送文本"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/sttStatus" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:editable="true"
+        android:height="100dp"
+        android:text=""
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/sttStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textResult"
+        android:layout_marginTop="5dp"
+        android:editable="true"
+        android:height="20dp"
+        android:textSize="12dp"
+        android:text=""/>
+
+</RelativeLayout>
